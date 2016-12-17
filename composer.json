@@ -1,0 +1,30 @@
+{
+  "name": "paay/paay_integrator",
+  "type": "library",
+  "description": "Paay Integration SDK",
+  "license": "MIT",
+  "homepage": "https://www.paay.co/",
+  "require": {
+    "php": ">=5.5.0",
+    "ext-curl":"*",
+    "ext-hash":"*"
+  },
+  "require-dev": {
+    "phpunit/phpunit" : "5.5.*",
+    "behat/behat": "^3.2",
+    "phpdocumentor/phpdocumentor": "*"
+  },
+  "autoload": {
+    "psr-0": {
+      "ThreeDS": "lib/"
+    },
+    "psr-4": {
+      "ThreeDS\\": "lib/ThreeDS"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Test\\": "tests"
+    }
+  }
+}
